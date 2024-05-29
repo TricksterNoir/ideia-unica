@@ -2,22 +2,45 @@ import { useState } from "react";
 
 function Home(){
     return <div>
-    A Thay é linda
-    <Contador />
+    <h1 className="homeTitle">A Thay é linda</h1>
+    <Declaracao />
     </div> 
 }
 
-function Contador(){
-    const [contador, setContador] = useState(1);
+// function sortMegaSena(){
+//     const listSorted = [];
+//     let i = 0;
     
-    function adicionarContador(){
-        setContador(contador + 1);
+//     while(i<5){
+//         const sortedNumber = Math.floor(Math.random() * 60) + 1;
+//         const formattedNumber = sortedNumber.toLocaleString('en-us', {
+//             minimumIntegerDigits: 2,
+//             useGrouping: false
+//         });
+//         listSorted.push(formattedNumber)
+//     }
+
+//     return (
+//         <div>
+//             <div>Seu palpite para megasena é: </div>
+//             <button onClick={sortMegaSena}>Sortear</button>
+//         </div>
+//     )
+// }
+
+function Declaracao(){
+    const[msg, setMsg] = useState(`Clica ai embaixo só pra testar um negócio`);
+    
+    function mudaMsg(){
+        setMsg(`Obrigado por todo seu apoio e carinho, é algo besta mas queria arrumar uma forma diferente de te agradecer por dispor do seu tempo para me ajudar, você é ótima!`);
     }
-    
-    return (
+
+    return(
         <div>
-            <div>{contador}</div>
-            <button onClick={adicionarContador}>Adicionar</button>
+            <div className="responseMsg">{msg}</div>
+            <div className="buttonContainer">
+                <button onClick={mudaMsg}>Clique para ver a mensagem</button>
+            </div>
         </div>
     )
 }
