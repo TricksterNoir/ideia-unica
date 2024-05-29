@@ -2,7 +2,7 @@ import { useState } from "react";
 
 function Home(){
     return <div>
-    <h1 className="homeTitle">A Thay é linda</h1>
+    <h1 className="homeTitle">Mensagem especial!</h1>
     <Declaracao />
     </div> 
 }
