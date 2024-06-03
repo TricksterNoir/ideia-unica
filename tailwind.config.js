@@ -11,7 +11,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        gray: colors.neutral
+        gray: colors.neutral,
+        'cougar-smoky-black': '#0B0807',
+        'cougar-vermilion': '#F24333',
+        'cougar-bistre': '#492C1F',
+        'cougar-anti-flash-white': '#EEF0F2',
+        'cougar-french-gray': '#C8C5C8',
       },
       fontFamily: {
         // to change, update font in _document.js
