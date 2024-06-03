@@ -31,17 +31,6 @@ export default function Navbar(props) {
       label: "Archive",
       href: "/archive"
     },
-    {
-      label: "Pro Version",
-      href: "https://stablo-pro.web3templates.com/",
-      external: true,
-      badge: "new"
-    },
-    {
-      label: "Download",
-      href: "https://web3templates.com/templates/stablo-minimal-blog-website-template",
-      external: true
-    }
   ];
 
   const mobilemenu = [...leftmenu, ...rightmenu];
@@ -85,8 +74,8 @@ export default function Navbar(props) {
                         sizes="(max-width: 640px) 100vw, 200px"
                       />
                     ) : (
-                      <span className="block text-center">
-                        Stablo
+                      <span className="block text-center text-cougar-vermilion text-xl">
+                        Cougar's Car
                       </span>
                     )}
                   </Link>
@@ -100,7 +89,7 @@ export default function Navbar(props) {
                       />
                     ) : (
                       <span className="block text-center">
-                        Stablo
+                        Cougar's Car
                       </span>
                     )}
                   </Link>
