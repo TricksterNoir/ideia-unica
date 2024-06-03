@@ -67,11 +67,6 @@ export default function NavbarAlt(props) {
         }
       ]
     },
-    {
-      label: "Purchase",
-      href: "https://web3templates.com/templates/stablo-minimal-blog-website-template",
-      external: true
-    }
   ];
 
   return (
@@ -92,7 +87,7 @@ export default function NavbarAlt(props) {
                       />
                     ) : (
                       <span className="block text-center">
-                        Stablo
+                        Cougar's Car
                       </span>
                     )}
                   </Link>
@@ -106,7 +101,7 @@ export default function NavbarAlt(props) {
                       />
                     ) : (
                       <span className="block text-center">
-                        Stablo
+                        Cougar's Car
                       </span>
                     )}
                   </Link>
